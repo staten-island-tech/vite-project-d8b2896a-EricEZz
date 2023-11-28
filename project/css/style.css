@@ -1,18 +1,35 @@
+*{
+  text-align: center;
+}
+
 :root{
   --light-blue: #2998ff;
+  --white: #ffffe6; 
+  --black: #000;
+  --red: #f87171;
   --h1: 7.594rem;
   --h2: 5.063rem;
   --h3: 3.375rem;
   --h4: 2.25rem;
   --h5: 1.5rem;
 
-  --primary: var(--)
-  --secondary: var(--)
+  --primary: var(var(--white));
+  --secondary: var(var(--light-blue))
+}
+
+.jonq{
+  background-color: var(--primary);
+}
+.backup{
+  background-color: var(--secondary);
+  height: 90vh;
 }
 
 h1,h2,h3,h4,h5{
   text-align: center;
 }
+
+
 h1{
   font-size: var(--h1);
 }
@@ -31,10 +48,10 @@ h5{
 
 .dark{
   --btn:var(--light-blue);
-  background-color: var(--light-blue);
+  background-color: var(--white);
 }
 
 .light{
-  --btn: var(--light-blue);
+  --btn: var(--white);
   background-color: var(--light-blue);
 }
