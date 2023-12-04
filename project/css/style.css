@@ -14,7 +14,7 @@
   --h5: 1.5rem;
 
   --primary: var(var(--white));
-  --secondary: var(var(--light-blue))
+  --secondary: var(var(--light-blue));
 }
 
 .jonq{
@@ -54,4 +54,8 @@ h5{
 .light{
   --btn: var(--white);
   background-color: var(--light-blue);
+}
+.top{
+  text-align: center;
+  margin: 1rem;
 }
