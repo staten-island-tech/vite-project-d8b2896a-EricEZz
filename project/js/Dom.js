@@ -1,3 +1,5 @@
-const DOMSelector = {
+const DOMSelectors = {
     
 }
+
+export{DOMSelectors};

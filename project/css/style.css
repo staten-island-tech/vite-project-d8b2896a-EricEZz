@@ -16,6 +16,9 @@
   --primary: var(var(--white));
   --secondary: var(var(--light-blue));
 }
+.card:hover {
+  transform: scale(1.05);
+}
 
 .jonq{
   background-color: var(--primary);
