@@ -1,6 +1,6 @@
 import '../css/style.css'
 import{cameras} from"./cameras"
-import{DOMSelectors} from"./dom"
+//import{DOMSelectors} from"./dom"
 
 cameras.forEach(element => DOMSelectors.container.insertAdjacentHTML(
     "beforeend"
