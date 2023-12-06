@@ -1,4 +1,6 @@
 const DOMSelectors = {
     type: document.queryselector("cameras.brand"),
-    smart: document.querySelector("cameras.smart")
-    }
+    smart: document.querySelector("cameras.smart"),
+
+    };
+    export{DOMSelectors};

@@ -1,7 +1,3 @@
-*{
-  text-align: center;
-  
-}
 
 :root{
   --light-blue: #2998ff;
@@ -63,6 +59,25 @@ h5{
   background-color: var(--light-blue);
 }
 .top{
+  background-color: var(--primary);
   text-align: center;
   margin: 1rem;
+}
+.selects{
+  background-color: var(--secondary);
+  height: 80vh;
+}
+
+.butn{
+text-transform: uppercase;
+padding: 1.5rem 4 rem;
+display: inline-block;
+margin: 1rem auto;
+font-size: 2rem;
+border-radius: 10rem;
+transition: all 0.2s;
+}
+.butn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 0.5rem #000020;
 }
