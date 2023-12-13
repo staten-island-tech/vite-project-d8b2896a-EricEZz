@@ -6,11 +6,15 @@ function filter(){
     DOMSelectors.container.insertAdjacentHTML(
         "beforeend"
         `<div class="card">
-            <div class="card-head" >${camera.name}</div>
-            <img src = ${camera.img} class = "card-img"/>
-            <div class="card">${camera.price}</div>
+            <div class="card-head" >${cameras.name}</div>
+            <img src = ${cameras.img} class = "card-img"/>
+            <div class="card">${cameras.price}</div>
              </div>`)
 }
+
+
+
+
 
 /* 
 cameras.forEach(element => DOMSelectors.container.insertAdjacentHTML(

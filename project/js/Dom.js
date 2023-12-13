@@ -1,6 +1,8 @@
 const DOMSelectors = {
-    type: document.queryselector("cameras.brand"),
-    smart: document.querySelector("cameras.smart"),
-
+    brand: document.queryselector(".brand"),
+    smart: document.querySelector(".smart"),
+    price: document.querySelector(".price"),
+    wireless: document.querySelector(".wired"),
+    
     };
     export{DOMSelectors};
