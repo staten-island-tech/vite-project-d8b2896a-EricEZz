@@ -10,6 +10,7 @@ function filter(){
             <img src = ${cameras.img} class = "card-img"/>
             <div class="card">${cameras.price}</div>
              </div>`)
+             
 }
 
 
