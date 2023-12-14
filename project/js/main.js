@@ -1,7 +1,8 @@
-/* import '../css/style.css'
+//import '../css/style.css'
+import '../css/style.css'
 import{cameras} from"./cameras"
-import{DOMSelectors} from"./Dom"
- */
+import { DOMSelectors } from './Dom';
+ 
 function themes(){
     document.querySelector(".but").addEventListener("click",function(){
         if(document.body.classList.contains("light")){
@@ -24,6 +25,7 @@ themes();
              </div>`);
              
 };  
+filter();
 
 cameras.forEach(element => DOMSelectors.container.insertAdjacentHTML(
     "beforeend"
