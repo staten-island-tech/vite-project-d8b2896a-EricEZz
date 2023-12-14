@@ -1,8 +1,7 @@
-
- import '../css/style.css'
+/* import '../css/style.css'
 import{cameras} from"./cameras"
 import{DOMSelectors} from"./Dom"
-
+ */
 function themes(){
     document.querySelector(".but").addEventListener("click",function(){
         if(document.body.classList.contains("light")){
@@ -14,8 +13,7 @@ function themes(){
         }
     });
     }
-    themes();
-
+themes();
  function filter(){
     DOMSelectors.container.insertAdjacentHTML(
         "beforeend"
