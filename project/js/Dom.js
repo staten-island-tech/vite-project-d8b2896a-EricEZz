@@ -4,6 +4,9 @@ const DOMSelectors = {
     price: document.querySelector(".price"),
     wireless: document.querySelector(".wired"),
     btn: document.querySelector(".btn"),
-    card: document.querySelector(".card")
+    card: document.querySelector(".card"),
+    but1:document.querySelector("#blink"),
+    but2:document.querySelector("#eken"),
+    but3:document.querySelector("#blurams")
     };
     export{DOMSelectors};

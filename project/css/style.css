@@ -31,13 +31,23 @@
   margin: 10vh;
   background-color: var(--primary);
 }
-.jonq{
+.dark{
+  --primary:var(--light-blue);
+  --secondary:var(--red);
+}
+
+.light{
+  --primary:var(--white);
+  --secondary:var(--yellow);
+}
+
+/* .jonq{
   background-color: var(--primary);
 }
 .backup{
   background-color: var(--secondary);
   height: 90vh;
-}
+} */
 
 h1,h2,h3,h4,h5{
   text-align: center;
@@ -60,15 +70,6 @@ h5{
   font-size: var(--h5);
 }
 
-.dark{
-  --btn:var(--light-blue);
-  background-color: var(--white);
-}
-
-.light{
-  --btn: var(--white);
-  background-color: var(--light-blue);
-}
 .top{
   background-color: var(--primary);
   text-align: center;
@@ -79,7 +80,7 @@ h5{
   height: 80vh;
 }
 
-.btn{
+.btn,.but{
 text-transform: uppercase;
 padding: 1.5rem 4 rem;
 display: inline-block;

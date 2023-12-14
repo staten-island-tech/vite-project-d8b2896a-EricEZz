@@ -1,12 +1,22 @@
-import '../css/style.css'
+
+ import '../css/style.css'
 import{cameras} from"./cameras"
 import{DOMSelectors} from"./Dom"
 
-function click(){
+function themes(){
+    document.querySelector(".but").addEventListener("click",function(){
+        if(document.body.classList.contains("light")){
+            document.body.classList.add("dark");
+            document.body.classList.remove("light");
+        } else{
+            document.body.classList.add("light");
+            document.body.classList.remove("dark");
+        }
+    });
+    }
+    themes();
 
-}
-
-function filter(){
+ function filter(){
     DOMSelectors.container.insertAdjacentHTML(
         "beforeend"
         `<div class="card">
@@ -15,15 +25,8 @@ function filter(){
             <div class="card">${cameras.price}</div>
              </div>`);
              
-};
+};  
 
-
-
-
-
-
-
-/* 
 cameras.forEach(element => DOMSelectors.container.insertAdjacentHTML(
     "beforeend"
     `<div class="card">
@@ -32,7 +35,7 @@ cameras.forEach(element => DOMSelectors.container.insertAdjacentHTML(
         <div class="card" ></div>
          </div>`
     )
-); */
+); 
 /* function addCard(){
     const card = 
     `<div class="box">
