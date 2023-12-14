@@ -2,6 +2,10 @@ import '../css/style.css'
 import{cameras} from"./cameras"
 import{DOMSelectors} from"./Dom"
 
+function click(){
+
+}
+
 function filter(){
     DOMSelectors.container.insertAdjacentHTML(
         "beforeend"
@@ -9,9 +13,11 @@ function filter(){
             <div class="card-head" >${cameras.name}</div>
             <img src = ${cameras.img} class = "card-img"/>
             <div class="card">${cameras.price}</div>
-             </div>`)
+             </div>`);
              
-}
+};
+
+
 
 
 
