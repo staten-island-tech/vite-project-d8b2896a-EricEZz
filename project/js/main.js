@@ -1,10 +1,8 @@
-//import '../css/style.css'
-import '../css/style.css'
-import{cameras} from"./cameras"
-import { DOMSelectors } from './Dom';
- 
-function themes(){
-    document.querySelector(".but").addEventListener("click",function(){
+import '../css/style.css';
+import {cameras} from "./cameras";
+import { DOMSelectors } from './Dom'; 
+
+ document.querySelector("#button").addEventListener("click",function(){
         if(document.body.classList.contains("light")){
             document.body.classList.add("dark");
             document.body.classList.remove("light");
@@ -13,9 +11,9 @@ function themes(){
             document.body.classList.remove("dark");
         }
     });
-    }
-themes();
- function filter(){
+
+
+  function filter(){
     DOMSelectors.container.insertAdjacentHTML(
         "beforeend"
         `<div class="card">
@@ -35,7 +33,7 @@ cameras.forEach(element => DOMSelectors.container.insertAdjacentHTML(
         <div class="card" ></div>
          </div>`
     )
-); 
+);  
 /* function addCard(){
     const card = 
     `<div class="box">
