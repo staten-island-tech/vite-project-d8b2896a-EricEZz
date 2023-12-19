@@ -7,6 +7,7 @@ const DOMSelectors = {
     card: document.querySelector(".card"),
     but1:document.querySelector("#blink"),
     but2:document.querySelector("#eken"),
-    but3:document.querySelector("#blurams")
+    but3:document.querySelector("#blurams"), 
+    but:document.querySelector("#button")
     };
     export{DOMSelectors};

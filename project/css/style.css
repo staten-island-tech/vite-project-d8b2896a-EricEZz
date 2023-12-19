@@ -80,7 +80,8 @@ h5{
   height: 80vh;
 }
 
-.btn,.but{
+.btn,
+.but{
 text-transform: uppercase;
 padding: 1.5rem 4 rem;
 display: inline-block;

@@ -27,6 +27,7 @@ const filters = ["EKEN", "blurams", "blink"];
              </div>`)
              );
 };  
+filter();
 
 function EKENcam(){
     const call = cards.filter((cameras)=> cameras.brand.includes("EKEN"));
