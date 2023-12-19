@@ -1,6 +1,6 @@
-import '../css/style.css';
-import {cameras} from "./cameras";
-import { DOMSelectors } from './Dom'; 
+import '../css/style.css'
+import {cameras} from "./cameras"
+import { DOMSelectors } from './Dom' 
 
  document.querySelector("#button").addEventListener("click",function(){
         if(document.body.classList.contains("light")){

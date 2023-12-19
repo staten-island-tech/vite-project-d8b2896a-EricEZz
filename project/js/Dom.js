@@ -10,4 +10,5 @@ const DOMSelectors = {
     but3:document.querySelector("#blurams"), 
     but:document.querySelector("#button")
     };
+    
     export{DOMSelectors};
