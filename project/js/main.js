@@ -1,4 +1,4 @@
-// import '../css/style.css'
+//  import '../css/style.css'
 import {cameras} from "./cameras.js"
 import { DOMSelectors } from './Dom.js' 
 
@@ -15,19 +15,27 @@ function themes(){
     }
 themes();
 
-const filters = ["EKEN", "blurams", "blink"];
+// const filters = ["EKEN", "blurams", "blink"];
+cameras.forEach(cam => DOMSelectors.container.insertAdjacentHTML(
+    "beforeend" , 
+        `  <div class="card">
+        <h1 class="card-head" >${cameras.name}</h1>
+        <img src = ${cameras.img} class = "card-img"/>
+           <h3 class="card">${cameras.price}</h3>
+           </div>`)
 
- function filter(){
-    cards.forEach(element => DOMSelectors.container.insertAdjacentHTML(
-        "beforeend"
-        `<div class="card">
-            <div class="card-head" >${cameras.name}</div>
-            <img src = ${cameras.img} class = "card-img"/>
-            <div class="card">${cameras.price}</div>
-             </div>`)
-             );
-};  
-filter();
+)
+//  function filter(){
+//     cameras.forEach(cameras => DOMSelectors.container.insertAdjacentHTML(
+//         "beforeend" , 
+//         `<div class="card">
+//             <div class="card-head" >${cameras.name}</div>
+//             <img src = ${cameras.img} class = "card-img"/>
+//             <div class="card">${cameras.price}</div>
+//              </div>`)
+//              );
+// };  
+// filter();
 
 function EKENcam(){
     const call = cards.filter((cameras)=> cameras.brand.includes("EKEN"));
@@ -65,18 +73,18 @@ const call = cards.filter((cameras)=> cameras.brand.includes("Blurams"));
          );
         };
 
-        DOMSelectors.EKEN.addEventListener("click", function(){
-            DOMSelectors.cards.innerHTML = '';
-            EKENcam()
-        });
-        DOMSelectors.Blink.addEventListener("click", function(){
-            DOMSelectors.cards.innerHTML = '';
-            Blinkcam()
-        });
-        DOMSelectors.Blurams.addEventListener("click", function(){
-            DOMSelectors.cards.innerHTML = '';
-            Bluramscam()
-        });
+        // DOMSelectors.EKEN.addEventListener("click", function(){
+        //     DOMSelectors.container.innerHTML = ''
+        //     EKENcam()
+        // });
+        // DOMSelectors.Blink.addEventListener("click", function(){
+        //     DOMSelectors.container.innerHTML = ''
+        //     Blinkcam()
+        // });
+        // DOMSelectors.Blurams.addEventListener("click", function(){
+        //     DOMSelectors.container.innerHTML = ''
+        //     Bluramscam()
+        // });
 /* function addCard(){
     const card = 
     `<div class="box">
