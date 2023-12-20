@@ -1,4 +1,3 @@
-//  import '../css/style.css'
 import {cameras} from "./cameras.js"
 import { DOMSelectors } from './Dom.js' 
 
@@ -19,9 +18,9 @@ themes();
 cameras.forEach(cam => DOMSelectors.container.insertAdjacentHTML(
     "beforeend" , 
         `  <div class="card">
-        <h1 class="card-head" >${cameras.name}</h1>
-        <img src = ${cameras.img} class = "card-img"/>
-           <h3 class="card">${cameras.price}</h3>
+        <h1 class="card-head" >${cam.name}</h1>
+        <img src = ${cam.img} class = "card-img"/>
+           <h3 class="card">${cam.price}</h3>
            </div>`)
 
 )
