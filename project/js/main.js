@@ -14,7 +14,12 @@ function themes(){
     }
 themes();
 
+function clearFields(){
+    DOMSelectors.container.innerHTML = ""; 
+};
 // const filters = ["EKEN", "blurams", "blink"];
+function load(){
+    clearFields();
 cameras.forEach(cam => DOMSelectors.container.insertAdjacentHTML(
     "beforeend" , 
         `  <div class="card">
@@ -23,7 +28,60 @@ cameras.forEach(cam => DOMSelectors.container.insertAdjacentHTML(
            <h3 class="card">${cam.price}</h3>
            </div>`)
 
-)
+)};
+load();
+
+DOMSelectors.allbtn.addEventListener("click", function(){
+    load();
+})
+
+function Blinkcam(){
+    clearFields();
+    const call = cameras.filter((cameras)=> cameras.brand.includes ("Blink"));
+    call.forEach((cameras) => DOMSelectors.container.insertAdjacentHTML(
+        "beforeend",
+    `<div class="card">
+        <div class="card-head" id="Blink">${cameras.name}</div>
+        <img src = ${cameras.img} class = "card-img"/>
+        <div class="card">${cameras.price}</div>
+         </div>`));
+};
+DOMSelectors.but1.addEventListener("click", function(){
+    Blinkcam();
+});
+
+
+function EKENcam(){
+    clearFields();
+    const call = cameras.filter((cameras)=> cameras.brand.includes("EKEN"));
+    call.forEach((cameras) => DOMSelectors.container.insertAdjacentHTML(
+        "beforeend",
+    `<div class="card">
+        <div class="card-head" id="EKEN">${cameras.name}</div>
+        <img src = ${cameras.img} class = "card-img"/>
+        <div class="card">${cameras.price}</div>
+         </div>`));
+};
+DOMSelectors.but2.addEventListener("click", function(){
+    EKENcam();
+});
+
+function Bluramscam(){
+    clearFields();
+const call = cameras.filter((cameras)=> cameras.brand.includes("Blurams"));
+    call.forEach((cameras) => DOMSelectors.container.insertAdjacentHTML(
+        "beforeend",
+    `<div class="card">
+        <div class="card-head" id="Blurams">${cameras.name}</div>
+        <img src = ${cameras.img} class = "card-img"/>
+        <div class="card">${cameras.price}</div>
+         </div>`)
+         );
+        };
+DOMSelectors.but3.addEventListener("click", function(){
+    Bluramscam();
+});
+
 //  function filter(){
 //     cameras.forEach(cameras => DOMSelectors.container.insertAdjacentHTML(
 //         "beforeend" , 
@@ -35,43 +93,6 @@ cameras.forEach(cam => DOMSelectors.container.insertAdjacentHTML(
 //              );
 // };  
 // filter();
-
-function EKENcam(){
-    const call = cards.filter((cameras)=> cameras.brand.includes("EKEN"));
-    call.forEach((cameras) => DOMSelectors.cards.insertAdjacentHTML(
-        "beforeend"
-    `<div class="card">
-        <div class="card-head" id="EKEN">${cameras.name}</div>
-        <img src = ${cameras.img} class = "card-img"/>
-        <div class="card">${cameras.price}</div>
-         </div>`));
-};
-
-
-function Blinkcam(){
-    const call = cards.filter((cameras)=> cameras.brand.includes("Blink"));
-    call.forEach((cameras) => DOMSelectors.cards.insertAdjacentHTML(
-        "beforeend"
-    `<div class="card">
-        <div class="card-head" id="Blink">${cameras.name}</div>
-        <img src = ${cameras.img} class = "card-img"/>
-        <div class="card">${cameras.price}</div>
-         </div>`));
-};
-
-
-function Bluramscam(){
-const call = cards.filter((cameras)=> cameras.brand.includes("Blurams"));
-    call.forEach((cameras) => DOMSelectors.cards.insertAdjacentHTML(
-        "beforeend"
-    `<div class="card">
-        <div class="card-head" id="Blurams">${cameras.name}</div>
-        <img src = ${cameras.img} class = "card-img"/>
-        <div class="card">${cameras.price}</div>
-         </div>`)
-         );
-        };
-
         // DOMSelectors.EKEN.addEventListener("click", function(){
         //     DOMSelectors.container.innerHTML = ''
         //     EKENcam()

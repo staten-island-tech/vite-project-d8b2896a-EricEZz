@@ -59,7 +59,7 @@ const cameras = [
     },
     {
         name:"blurams Outdoor Security Camera",
-        Brand:"Blurams",
+        brand:"Blurams",
         smart: true,
         wireless: false,
         img:"https://m.media-amazon.com/images/I/51qqzYWF+ML._AC_SX466_.jpg",
@@ -68,7 +68,7 @@ const cameras = [
     },
     {
         name:"blurams Security Camera Outdoor",
-        Brand:"Blurams",
+        brand:"Blurams",
         smart: true,
         wireless: true,
         img:"https://m.media-amazon.com/images/I/61+pRFG0QTL._AC_SX466_.jpg",
@@ -77,7 +77,7 @@ const cameras = [
     },
     {
         name:"EKEN1080p",
-        Brand:"EKEN",
+        brand:"EKEN",
         smart: true,
         wireless: false,
         img:"https://m.media-amazon.com/images/I/71fvtUX3MIL._AC_SX466_.jpg",
@@ -86,7 +86,7 @@ const cameras = [
     },
     {
         name:"EKEN Solar Security Camera",
-        Brand:"EKEN",
+        brand:"EKEN",
         smart: true,
         wireless: true,
         img:"https://m.media-amazon.com/images/I/61d4OIme8GL._AC_SX466_.jpg",

@@ -21,8 +21,6 @@
 }
 
 .card{
-  height: 40vh;
-  width: 20vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -43,6 +41,12 @@
 
 .card-head{
   
+}
+.card-img{
+  width: 30vh;
+}
+.container{
+  background-color: var(--primary);
 }
 /* .jonq{
   background-color: var(--primary);

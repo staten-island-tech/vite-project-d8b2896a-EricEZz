@@ -7,7 +7,8 @@ const DOMSelectors = {
     but1:document.querySelector("#blink"),
     but2:document.querySelector("#eken"),
     but3:document.querySelector("#blurams"), 
-    but:document.querySelector("#button")
+    but:document.querySelector("#button"),
+    allbtn:document.querySelector("#allbtn")
     };
     
     export{DOMSelectors};
