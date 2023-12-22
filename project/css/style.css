@@ -7,10 +7,9 @@
   --yellow: #ffff26;
   --brown:#ad5a00;
   
-  --h1: 7.594rem;
-  --h2: 5.063rem;
-  --h3: 3.375rem;
-  --h4: 2.25rem;
+  --h1: 6.594rem;
+  --h2: 3.063rem;
+  --h3: 2.25rem;
   --h5: 1.5rem;
 
   --primary: var(var(--white));
@@ -19,15 +18,18 @@
 .card:hover {
   transform: scale(1.05);
 }
+.card-img{
+  height: 20vh;
+  width: 10vh;
+}
 
 .card{
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  border-radius: 10px;
-  margin: 10vh;
-  background-color: var(--primary);
+  border-radius:  5px;
+  margin: 5vh;
+
 }
 .dark{
   --primary:var(--light-blue);
@@ -40,7 +42,11 @@
 }
 
 .card-head{
+  text-align: center;
+  justify-content: space-around;
   
+  height: 10vh;
+  width: 30%;
 }
 .card-img{
   width: 30vh;
@@ -83,8 +89,10 @@ h5{
   margin: 1rem;
 }
 .selects{
+ display: flex;
+}
+.container{
   background-color: var(--secondary);
-  height: 80vh;
 }
 
 .btn,
