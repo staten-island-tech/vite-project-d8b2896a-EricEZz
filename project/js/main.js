@@ -82,6 +82,13 @@ DOMSelectors.but3.addEventListener("click", function(){
     Bluramscam();
 });
 
+// let buttons = document.queryselectiorAll('button')
+//buttons.forEach((btn)=> btn.addEventlistener("click, function(){
+/*     let type = btn.textContent.toLowerCase()
+    let newArr = cameras.filter((camera)=> camera.brand === type)
+    clearFields()
+    load(newArr)")) */
+
 //  function filter(){
 //     cameras.forEach(cameras => DOMSelectors.container.insertAdjacentHTML(
 //         "beforeend" , 
