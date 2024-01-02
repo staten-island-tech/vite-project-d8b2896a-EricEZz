@@ -31,7 +31,7 @@ cameras.forEach(cam => DOMSelectors.container.insertAdjacentHTML(
 )};
 load();
 
-DOMSelectors.allbtn.addEventListener("click", function(){
+ DOMSelectors.allbtn.addEventListener("click", function(){
     load();
 })
 
@@ -81,13 +81,14 @@ const call = cameras.filter((cameras)=> cameras.brand.includes("Blurams"));
 DOMSelectors.but3.addEventListener("click", function(){
     Bluramscam();
 });
-
-// let buttons = document.queryselectiorAll('button')
-//buttons.forEach((btn)=> btn.addEventlistener("click, function(){
-/*     let type = btn.textContent.toLowerCase()
+ 
+/* let buttons = document.queryselectiorAll('button')
+buttons.forEach((btn)=> allbtn.addEventlistener("click", function(){
+     let type = btn.textContent.toLowerCase()
     let newArr = cameras.filter((camera)=> camera.brand === type)
     clearFields()
-    load(newArr)")) */
+    load(newArr)
+}))  
 
 //  function filter(){
 //     cameras.forEach(cameras => DOMSelectors.container.insertAdjacentHTML(

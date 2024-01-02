@@ -11,4 +11,4 @@ const DOMSelectors = {
     allbtn:document.querySelector("#allbtn")
     };
     
-    export{DOMSelectors};
+    export{DOMSelectors}; 
