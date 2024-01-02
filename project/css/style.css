@@ -91,10 +91,6 @@ h5{
 .selects{
  display: flex;
 }
-.container{
-  background-color: var(--secondary);
-}
-
 .btn,
 .but{
 text-transform: uppercase;
